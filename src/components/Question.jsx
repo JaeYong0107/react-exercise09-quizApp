@@ -18,7 +18,10 @@ export default function Question({ index, onSelectAnswer, onSkipAnswer }) {
         timer = 2000;
 
     function handleSelectAnswer(answer) {
-
+        setAnswer({
+            selectedAnswer: answer,
+            isCorrect: null,
+        })
         setTimeout(() => {
             setAnswer({
                 selectedAnswer: answer,
